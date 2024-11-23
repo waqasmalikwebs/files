@@ -1,3 +1,6 @@
+# I am planning to for a web hosting company, and i will setup dockerized environments for each user on server.
+
+
 That sounds like an interesting and scalable project! Setting up Dockerized environments for each user on a web hosting platform can offer isolation, security, and scalability. Here's a roadmap and key considerations for setting up a Dockerized web hosting solution:
 
 ### 1. **Understand Your Hosting Model**
