@@ -1,0 +1,31 @@
+luxedoorsltd.co.uk
+
+docker run -d \
+  --name=openvpn-as --cap-add=NET_ADMIN \
+  -p 943:943 -p 443:443 -p 1194:1194/udp \
+  -v ./:/openvpn \
+  openvpn/openvpn-as
+  
+name: <your project name>
+services:
+    openvpn-as:
+        container_name: openvpn-as
+        cap_add:
+            - NET_ADMIN
+        ports:
+            - 943:943
+            - 443:443
+            - 1194:1194/udp
+        volumes:
+            - ./:/openvpn
+        image: openvpn/openvpn-as
+        
+./setup.sh email add user1@example.com
+        
+ info@luxedoorsltd.co.uk
+ j58f84
+ 
+ https://chatgpt.com/
+ https://openvpn.net/as-docs/docker.html#official-docker-vpn-server-with-access-server---openvpn
+ https://pass-gen.webicot.com/
+ 
